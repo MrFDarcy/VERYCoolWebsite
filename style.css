@@ -8,6 +8,24 @@ body {
   background-image: url("https://cdn.vectorstock.com/i/preview-1x/29/25/pixel-brick-wall-vector-12492925.jpg");
 }
 
+#noMobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  body div {
+    display: none;
+  }
+
+  #noMobile {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+  }
+}
+
 .mainPage {
   margin: 0 auto;
   width: 70%;
